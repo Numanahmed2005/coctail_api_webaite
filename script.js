@@ -1,18 +1,6 @@
 
-fetch('https://www.thecocktaildb.com/api/json/v1/1/search.php?f=a')
-.then(res=>res.json())
-.then(data=>{
-    data_show(data)
-
-})
-.catch(error=>{
-    console.log(error)
-})
-
-function data_show(datas){
-    console.log(datas)
-
+const handle_search=(event)=>{
+    
+    const input_value = document.getElementById("search-box").value
+    console.log(input_value)
 }
-
-
-
